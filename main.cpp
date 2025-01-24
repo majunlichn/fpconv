@@ -38,7 +38,7 @@ int main(int argc, char** argv)
         try
         {
             std::string output = fpconvert(operation, tokens);
-            printf("%s", output.c_str());
+            printf("%s\n", output.c_str());
             fflush(stdout);
         }
         catch (...)

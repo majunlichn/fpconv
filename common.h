@@ -4,7 +4,11 @@
 #include <cfloat>
 #include <cmath>
 #include <cstdint>
+#include <cstring>
+
+#if defined(_WIN32)
 #include <intrin.h>
+#endif
 
 #include <memory>
 #include <string>

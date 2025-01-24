@@ -67,4 +67,8 @@ cmake -S . -B build
 cmake --build build --config Release
 ```
 
-You can also directly compile from the sources, remember to set C++ standard as 20.
+You can also directly compile from the sources, just remember to set C++ standard to 20:
+
+```bash
+g++ -std=c++20 -o fpconv common.cpp fp16.cpp bf16.cpp fp8.cpp main.cpp
+```
