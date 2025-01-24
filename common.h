@@ -7,7 +7,10 @@
 #include <intrin.h>
 
 #include <memory>
+#include <string>
+#include <string_view>
 #include <type_traits>
+#include <vector>
 
 // Implementations of std::bit_cast() from C++ 20.
 //
@@ -56,3 +59,5 @@ inline uint32_t fp32_to_bits(float f) {
     return bit_cast<uint32_t>(f);
 #endif
 }
+
+std::vector<std::string> StrSplit(std::string_view str, std::string_view delimiters, bool skipEmptySubStr);
